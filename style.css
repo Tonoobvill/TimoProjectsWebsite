@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar {
-  width: 14%;
+  width: 17.3%;
   padding: 0px;
   height: 100vh;
   background: #191919;
@@ -113,7 +113,6 @@ body {
   height: 20px;
   position: fixed;
   bottom: 0;
-  width: 225.45px;
   padding: 10px;
 }
 
@@ -136,9 +135,9 @@ body {
 }
 
 .websites {
-  width: 86%;
+  width: 82.7%;
   height: 100vh;
-  margin-left: 13%;
+  margin-left: 17.3%;
 }
 
 .websites iframe {
