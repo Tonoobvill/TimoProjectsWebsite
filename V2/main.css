@@ -1,0 +1,92 @@
+* {
+    --dark-gradient-1: rgba(32, 32, 32, 0.5);
+    --dark-gradient-2: rgba(32, 32, 32, 0.3);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    background: url("./purple.png") center/cover no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body::before {
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: var(--dark-gradient-1);
+}
+
+body::after {
+    background: radial-gradient(circle at center, var(--dark-gradient-2) 20%, var(--dark-gradient-1) 80%);
+}
+
+.sidebar {
+    position: fixed;
+    left: 1vw;
+    top: 1vw;
+    width: 18vw;
+    padding: 0;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 5%;
+    margin: 5% 0;
+}
+
+.sidebar-button {
+    display: block;
+    width: 90%;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 7px;
+    margin: 1% 0;
+    padding: 0 5%;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(40, 40, 40, 0.5);
+    cursor: pointer;
+}
+
+.sidebar-button i {
+    padding-right: 5%;
+}
+
+body.hue-timoprojects::before {
+    backdrop-filter: blur(40px) hue-rotate(0deg);
+    -webkit-backdrop-filter: blur(40px) hue-rotate(0deg);
+}
+
+body.hue-quotes::before {
+    backdrop-filter: blur(40px) hue-rotate(120deg);
+    -webkit-backdrop-filter: blur(40px) hue-rotate(120deg);
+}
+
+body.hue-krai::before {
+    backdrop-filter: blur(40px) hue-rotate(80deg);
+    -webkit-backdrop-filter: blur(40px) hue-rotate(80deg);
+}
+
+body.hue-tonoobvill::before {
+    backdrop-filter: blur(40px) saturate(0);
+    -webkit-backdrop-filter: blur(40px) saturate(0);
+}

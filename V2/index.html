@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website containing links to other Timo Projects websites">
+    <meta name="color-scheme" content="dark">
+    <meta name="author" content="Timo Faux-Nam">
+    <title>Timo Projects</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebarItems = [
+                { id: "timoprojects", hueClass: "hue-timoprojects" },
+                { id: "quotes", hueClass: "hue-quotes" },
+                { id: "krai", hueClass: "hue-krai" },
+                { id: "tonoobvill", hueClass: "hue-tonoobvill" }
+            ];
+
+            const body = document.body;
+
+            sidebarItems.forEach(item => {
+                const element = document.getElementById(item.id);
+                if (element) {
+                    element.addEventListener("mouseenter", () => body.classList.add(item.hueClass));
+                    element.addEventListener("mouseleave", () => body.classList.remove(item.hueClass));
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <p class="sidebar-title">Timo Projects</p>
+        <div class="sidebar-button" id="timoprojects">
+            <i class="fa-regular fa-folder-open" style="color: #a882ff;"></i>Timo Projects</div>
+        <a class="sidebar-button" id="quotes" target="_blank" href="https://quotes.timoprojects.com/">
+            <i class="fa fa-comment" style="color: #db9e34;"></i>Quotes Without Context</a>
+        <a class="sidebar-button" id="krai" target="_blank" href="https://krai.timoprojects.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 292 430" height="16" style="padding-right: 6%;">
+                <path d="M124 1C107-1 99 10 100 23L107 177 21 109C10 102 0 108 0 116L0 365C0 383 7 389 23 389L101 389C113 388 123 377 124 365L118 198 185 250C194 255 207 254 212 238L250 63C255 39 251 25 235 18ZM124 10 230 28C243 37 243 43 240 60L204 236C202 244 191 244 184 238L117 183 110 23C110 12 114 10 124 10M19 120 107 190 114 363C114 372 107 378 99 379L23 379C13 379 10 375 10 365L10 126C10 119 14 117 19 120" stroke="#ab2328" stroke-width="40" fill="#ab2328"></path>
+            </svg>Kirkland Ranch</a>
+        <a class="sidebar-button" id="tonoobvill" target="_blank" href="https://tonoobvill.timoprojects.com/">
+            <i class="fa-solid fa-splotch" style="color: #eee;"></i>Tonoobvill</a>
+    </div>
+</body>
+
+</html>
