@@ -3,11 +3,13 @@
 
 @import "minima";
 
-a {
+a,
+a:visited {
   color: #a882ff;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #5865F2;
   text-decoration: none;
 }
