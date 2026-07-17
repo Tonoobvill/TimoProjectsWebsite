@@ -1,38 +1,13 @@
 ---
 ---
 
-@import "minimal-mistakes";
-
-/* Purple links */
+@import "minima";
 
 a {
-    color: #a882ff !important;
+  color: #a882ff;
 }
 
 a:hover {
-    color: #5865F2 !important;
-}
-
-/* Make the background a little darker */
-
-body {
-    background: #0f1117;
-}
-
-/* Cards */
-
-.page {
-    background: #161b22;
-}
-
-/* Header */
-
-.masthead {
-    background: #0d1117;
-}
-
-/* Footer */
-
-.page__footer {
-    background: #0d1117;
+  color: #5865F2;
+  text-decoration: none;
 }
