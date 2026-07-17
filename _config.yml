@@ -1,2 +1,15 @@
 title: Timo Servers
 description: Library of links to my other links so I have easy access to my links that I made links to
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "dark"
+
+atom_feed:
+  hide: true
+
+search: false
+breadcrumbs: false
