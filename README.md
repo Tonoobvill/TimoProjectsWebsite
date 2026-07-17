@@ -1,5 +1,3 @@
-# Timo Projects Website
+# [Timo Servers Website](https://www.timoservers.com/)
 
-Website contining links to other Timo Projects websites
-
-[Timo Projects](https://timoprojects.com/)
+Library of links to my other links so I have easy access to my links that I made links to
