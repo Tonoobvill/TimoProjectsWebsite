@@ -3,14 +3,14 @@
 
 @import "minima";
 
-a,
-a:visited {
-  color: #a882ff;
+body {
+  background-color: #121212;
+  color: #e6e6e6;
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
+.site-title,
+.site-title:visited {
+  color: #ffffff;
 }
 
 .page-content {
@@ -19,4 +19,25 @@ a:focus {
 
 .wrapper {
   max-width: 900px;
+}
+
+/* Links */
+a {
+  color: #a882ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Code blocks (if you use them) */
+pre,
+code {
+  background-color: #1e1e1e;
+  color: #e6e6e6;
+}
+
+/* Horizontal lines */
+hr {
+  border-color: #333;
 }
