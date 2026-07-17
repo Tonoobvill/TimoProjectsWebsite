@@ -1,6 +1,5 @@
 ---
-layout: home
-title: ""
+layout: default
 ---
 
 ## Timo Servers Website
